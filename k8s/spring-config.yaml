@@ -4,7 +4,7 @@ metadata:
   name: spring-config
   namespace: devops
 data:
-  SPRING_DATASOURCE_URL: jdbc:mysql://mysql-service:3306/springdb
+  SPRING_DATASOURCE_URL: jdbc:mysql://mysql-service:3306/springdb?createDatabaseIfNotExist=true
 
 ---
 apiVersion: v1
@@ -14,5 +14,5 @@ metadata:
   namespace: devops
 type: Opaque
 data:
-  SPRING_DATASOURCE_USERNAME: c3ByaW5n
-  SPRING_DATASOURCE_PASSWORD: c3ByaW5nMTIz
+  SPRING_DATASOURCE_USERNAME: cm9vdA==
+  SPRING_DATASOURCE_PASSWORD: cm9vdDEyMw==
